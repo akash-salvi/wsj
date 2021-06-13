@@ -1,8 +1,8 @@
 * {
-  font-family: "Retina";
+  font-family: "Retina","Arial", "Helvetica", "sans-serif" ;
 }
 
-.body {
+.nav_body {
   margin: 0px;
   padding: 0px;
   font-size: 16px;
@@ -15,6 +15,12 @@
   justify-content: space-between;
   padding: 0px 10px 0 10px;
   height: 23px;
+}
+
+
+.first_dropButton{
+  font-size:11px ;
+  font-weight:500;
 }
 
 .details {
@@ -38,7 +44,7 @@ ul {
   list-style: none;
 }
 
-li {
+.items li {
   text-align: left;
   font-size: 12px;
   line-height: 28px;
@@ -49,7 +55,8 @@ a {
   color: inherit;
 }
 
-.dropButton:hover {
+
+.first_dropButton:hover {
   cursor: pointer;
 }
 
@@ -66,7 +73,7 @@ a {
 
 .next_bar_p {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 300 !important;
   white-space: nowrap;
   padding: 0 5px 0 5px;
   vertical-align: middle;
@@ -78,12 +85,14 @@ a {
 }
 
 .next_bar_p a span {
+  font-size: 14px;
+  line-height: 14px;
   padding: 0px 3px 0 3px;
-  font-family: "Retina Narrow","Retina","Arial";
+  font-family: "Retina Narrow",Retina,"Arial Narrow", Arial, Helvetica, sans-serif;
 }
 
 .next_bar_p a span:nth-child(2) {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .next_bar_p a span:nth-child(3) {
@@ -185,7 +194,7 @@ a {
   padding-top: 5px;
 }
 
-hr {
+.nav_hr {
   margin: 0;
   margin-top: 5px;
 }

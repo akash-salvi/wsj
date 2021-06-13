@@ -1,0 +1,125 @@
+.news_wrap{
+    display: grid;
+    grid-template-columns: 1.3fr 3fr 1fr;
+}
+
+.title_details{
+    border-right: 1px solid #ccc;
+}
+
+.titlenews{
+    padding: 0px 15px 0px 10px; 
+    padding-top: 0;
+    margin-bottom: 0px;
+    line-height: 25px;
+}
+
+.titlenews hr{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.news_title{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Escrow Condensed",Georgia,Serif !important;
+}
+
+.titlenews p a {
+    font-family: "Escrow Condensed",Georgia,Serif !important;
+}
+
+.titlenews p{
+    font-family: "Exchange",Georgia,Serif;
+}
+.info_hr{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+.worldnews{
+    height:auto;
+    padding: 10px;
+}
+
+.worldnews p a {
+    font-family: "Escrow Condensed",Georgia,Serif !important;
+}
+
+.worldnews p{
+    font-family: "Exchange",Georgia,Serif;
+}
+
+.news_desc{
+    line-height: 18px;
+    font-size: 14px;
+    margin: 0;
+}
+
+.time{
+    font-size: 12px;
+    color: rgb(161, 161, 161);
+    margin: 0;
+}
+
+.first_news{
+    display: block;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.first_news p a {
+    font-family: "Escrow Condensed",Georgia,Serif !important;
+}
+
+.first_news p{
+    font-family: "Exchange",Georgia,Serif;
+}
+
+.first_news hr{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.image_news{
+    border-right: 1px solid #ccc;
+}
+.img_details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+}
+
+
+
+
+
+.recomnews{
+    height:auto;
+    padding: 0 10px 0 10px;
+    padding-top: 0;
+    
+}
+
+.r_heading{
+    padding: 0 10px 10px 10px;
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.recom_title    {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Escrow Condensed",Georgia,Serif !important;
+}
+
+.recom_author,.recom_time{
+    font-size: 12px;
+    color: rgb(161, 161, 161);
+    margin: 0;
+}
+
+
+

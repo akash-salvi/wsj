@@ -14,16 +14,15 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Container fluid className="body">
+    <Container fluid className="nav_body">
       <div className="top_bar">
         <p>
           <span
             onClick={() => setOpen(!open)}
             aria-controls="example-collapse-text"
             aria-expanded={open}
-            style={{fontSize:"13px",fontWeight:"500"}}
           >
-            <span className="dropButton">Dow Jones, a News Corp company <span aria-label="increase">▼</span></span>
+            <span className="first_dropButton">Dow Jones, a News Corp company <span aria-label="increase">▼</span></span>
           </span>
           <Collapse in={open}>
             <div id="example-collapse-text" className="details">
@@ -49,7 +48,7 @@ const Navbar = () => {
                       </ul>
                       </Col>
                       <Col>
-                      <ul class="style--hat-col--30JPtQ4p ">
+                      <ul class="items">
                           <li role="none"><a role="menuitem" href="https://www.getnewsmart.com/">Newsmart</a></li>
                           <li role="none"><a role="menuitem" href="https://newsplus.wsj.com">NewsPlus</a></li>
                           <li role="none"><a role="menuitem" href="https://djlogin.dowjones.com/login.asp?productname=rnc">Risk &amp;
@@ -69,8 +68,8 @@ const Navbar = () => {
             </div>            
           </Collapse>
         </p>
-        <p style={{fontSize:"13px",fontWeight:"500",paddingTop:"3px"}}>
-          <a href="https://www.wsj.com/about-us?mod=wsjcorphat">About WSJ</a>
+        <p>
+          <a href="https://www.wsj.com/about-us?mod=wsjcorphat" style={{fontSize:"12px",fontWeight:"500",paddingTop:"3px"}}>About WSJ</a>
         </p>
       </div>
 
@@ -207,7 +206,7 @@ const Navbar = () => {
             Sports
           </div>
       </div>
-      <hr />
+      <hr className="nav_hr" />
     </Container>
   );
 };
