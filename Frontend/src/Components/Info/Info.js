@@ -9,25 +9,25 @@ const Info = () => {
   const [recommendation, setRecommendation] = useState([]);
 
   useEffect(() => {
-    // axios.get(
-    //   "https://gnews.io/api/v4/top-headlines?country=us&token=6bbc393eac8f778d09466ac7ea915c56"
-    // )
-    // .then((res) => {
-    //   setTop(res.data.articles)
-    // })
-    // .catch((error) => {
-    //   console.error(error);
-    // });
+    axios.get(
+      "https://gnews.io/api/v4/top-headlines?country=us&token=6bbc393eac8f778d09466ac7ea915c56"
+    )
+    .then((res) => {
+      setTop(res.data.articles)
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 
-    // axios.get(
-    //   "https://gnews.io/api/v4/search?q=world&token=6bbc393eac8f778d09466ac7ea915c56"
-    // )
-    // .then((res) => {
-    //   setWorld(res.data.articles)
-    // })
-    // .catch((error) => {
-    //   console.error(error);
-    // });
+    axios.get(
+      "https://gnews.io/api/v4/search?q=world&token=6bbc393eac8f778d09466ac7ea915c56"
+    )
+    .then((res) => {
+      setWorld(res.data.articles)
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 
     // axios.get(
     //   "https://gnews.io/api/v4/search?q=recommendation&token=6bbc393eac8f778d09466ac7ea915c56"
@@ -39,16 +39,16 @@ const Info = () => {
     //   console.error(error);
     // });
 
-    // axios.get(
-    //   "https://gnews.io/api/v4/top-headlines?country=us&topic=business&token=6bbc393eac8f778d09466ac7ea915c56"
-    // )
-    // .then((res) => {
-    //   setBusiness(res.data.articles)
-    //   console.log(res)
-    // })
-    // .catch((error) => {
-    //   console.error(error);
-    // });
+    axios.get(
+      "https://gnews.io/api/v4/top-headlines?country=us&topic=business&token=6bbc393eac8f778d09466ac7ea915c56"
+    )
+    .then((res) => {
+      setBusiness(res.data.articles)
+      console.log(res)
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 
     var j = 0;
     for (var i = 0; i < top.length; i++) {
