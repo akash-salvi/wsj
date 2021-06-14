@@ -1,6 +1,12 @@
+.main_body{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+
 .news_wrap{
     display: grid;
-    grid-template-columns: 1.3fr 3fr 1fr;
+    grid-template-columns: 1.3fr 3fr;
 }
 
 .title_details{
@@ -81,9 +87,7 @@
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.image_news{
-    border-right: 1px solid #ccc;
-}
+
 .img_details{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -94,6 +98,16 @@
 
 
 
+
+.inner_hr{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.short_section{
+    border-left: 1px solid #ccc;
+}
+
 .recomnews{
     height:auto;
     padding: 0 10px 0 10px;
@@ -101,18 +115,29 @@
     
 }
 
+.r_hr{
+    margin: 5px 0 5px 0;
+}
 .r_heading{
-    padding: 0 10px 10px 10px;
-    margin-bottom: 15px;
+    padding: 0 10px 0px 10px;
+    text-decoration: underline;
+    margin-bottom: 5px;
     font-size: 23px;
     font-weight: 500;
 }
 
-.recom_title    {
+.recom_title{
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+
+.recom_title a {
     font-size: 18px;
     font-weight: 400;
     margin: 0;
-    font-family: "Escrow Condensed",Georgia,Serif !important;
+    line-height: 15px;
+    font-family: "Escrow Condensed",Georgia,Serif;
 }
 
 .recom_author,.recom_time{
@@ -122,4 +147,58 @@
 }
 
 
+.opinion_details{
+    padding: 0 10px 0 10px;
+}
+.opinion_heading{
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: #a28c6d;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Retina Narrow","Retina","Arial Narrow",Arial, Helvetica, sans-serif;
+}
 
+.opinion_news{
+    padding: 0;
+}
+
+
+
+
+.bus_title{
+    padding: 10px 15px 10px 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bus_news{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
+}
+
+.bus_desc_img2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bus_news_title{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Escrow Condensed",Georgia,Serif;
+}
+
+.bus_news_desc{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Exchange",Georgia,Serif;
+}
+
+.bus_details1{
+    padding: 0 20px 10px 10px;
+}
+
+.bus_details2{
+    padding: 0 10px 10px 10px;
+}
