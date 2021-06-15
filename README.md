@@ -1,7 +1,10 @@
 # WSJ.com FrontPage.
 
 ### Screen Shots
-![Screenshot from 2021-06-13 23-42-20](https://user-images.githubusercontent.com/61380295/121817784-18a1f400-cca1-11eb-9b6b-3fade375e3a0.png)
-<br><br>
-![Screenshot from 2021-06-13 23-42-26](https://user-images.githubusercontent.com/61380295/121817795-20619880-cca1-11eb-9f79-6dbd08764fad.png)
+![Screenshot from 2021-06-15 11-53-50](https://user-images.githubusercontent.com/61380295/122003254-797c1a00-cdd0-11eb-936a-ef069a87ba5b.png)
+<br/><br/>
+![Screenshot from 2021-06-15 11-54-05](https://user-images.githubusercontent.com/61380295/122003266-7e40ce00-cdd0-11eb-8089-6691baae14d8.png)
+<br/><br/>
+![Screenshot from 2021-06-15 11-54-09](https://user-images.githubusercontent.com/61380295/122003278-81d45500-cdd0-11eb-8e6a-e84912e12b4e.png)
+
 
