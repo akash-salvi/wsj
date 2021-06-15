@@ -6,12 +6,10 @@ const Info = () => {
   const [top, setTop] = useState([]);
   const [world, setWorld] = useState([]);
   const [business, setBusiness] = useState([]);
-  const [recommendation, setRecommendation] = useState([]);
 
   useEffect(() => {
-    axios.get(
-      "https://gnews.io/api/v4/top-headlines?country=us&token=6bbc393eac8f778d09466ac7ea915c56"
-    )
+
+    axios.get("https://gnews.io/api/v4/top-headlines?country=us&token="+process.env.REACT_APP_NEWS_API)
     .then((res) => {
       setTop(res.data.articles)
     })
@@ -20,7 +18,7 @@ const Info = () => {
     });
 
     axios.get(
-      "https://gnews.io/api/v4/search?q=world&token=6bbc393eac8f778d09466ac7ea915c56"
+      "https://gnews.io/api/v4/search?q=world&token="+process.env.REACT_APP_NEWS_API
     )
     .then((res) => {
       setWorld(res.data.articles)
@@ -30,7 +28,7 @@ const Info = () => {
     });
 
     // axios.get(
-    //   "https://gnews.io/api/v4/search?q=recommendation&token=6bbc393eac8f778d09466ac7ea915c56"
+    //   "https://gnews.io/api/v4/search?q=recommendation&token="+process.env.REACT_APP_NEWS_API
     // )
     // .then((res) => {
     //   setRecommendation(res.data.articles)
@@ -40,7 +38,7 @@ const Info = () => {
     // });
 
     axios.get(
-      "https://gnews.io/api/v4/top-headlines?country=us&topic=business&token=6bbc393eac8f778d09466ac7ea915c56"
+      "https://gnews.io/api/v4/top-headlines?country=us&topic=business&token="+process.env.REACT_APP_NEWS_API
     )
     .then((res) => {
       setBusiness(res.data.articles)
@@ -102,7 +100,7 @@ const Info = () => {
             <div className="news_wrap">
                 <div className="title_details">
                   {top.map((top_news, i) => {
-                    if (i == 0) {
+                    if (i === 0) {
                       return (
                         <Fragment key={i}>
                           <div className="titlenews">
@@ -156,39 +154,39 @@ const Info = () => {
                   })}
                 </div>
                 <div className="image_news">
-                <div>
+                  <div>
+                    {world.map((world_news, i) => {
+                      if (i === 1) {
+                        return (
+                          <Fragment key={i}>
+                            <div className="first_news">
+                              <img
+                                src={world_news.image}
+                                alt="news_image"
+                                width="100%"
+                                height="auto"
+                              ></img>
+                              <p className="news_title">
+                                <a href={world_news.url}>
+                                  {world_news.title.slice(0, 50) + "..."}
+                                </a>
+                              </p>
+                              <p className="news_desc">
+                                {world_news.description.slice(0, 200) + "..."}
+                              </p>
+
+                              <p className="time">{world_news.publishedAt}</p>
+
+                              <hr />
+                            </div>
+                          </Fragment>
+                        );
+                      }
+                    })}
+                  </div>
+
+                  <div className="img_details">
                   {world.map((world_news, i) => {
-                    if (i === 1) {
-                      return (
-                        <Fragment key={i}>
-                          <div className="first_news">
-                            <img
-                              src={world_news.image}
-                              alt="news_image"
-                              width="100%"
-                              height="auto"
-                            ></img>
-                            <p className="news_title">
-                              <a href={world_news.url}>
-                                {world_news.title.slice(0, 50) + "..."}
-                              </a>
-                            </p>
-                            <p className="news_desc">
-                              {world_news.description.slice(0, 200) + "..."}
-                            </p>
-
-                            <p className="time">{world_news.publishedAt}</p>
-
-                            <hr />
-                          </div>
-                        </Fragment>
-                      );
-                    }
-                  })}
-                </div>
-
-                <div className="img_details">
-                  {top.map((world_news, i) => {
                     if (i >= 2 && i < 4) {
                       return (
                         <Fragment key={i}>
